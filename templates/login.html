@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <!--        route  -->
+    <form action="/user"  method="post">
+        <label for="">Username:</label>
+        <input type="text" placeholder="Fill username" name="username">
+
+        <br>
+
+        <label for="">Password:</label>
+        <input type="password" placeholder="Fill Password" name="password">
+
+        <br>
+
+        <input type="hidden" name="fomr_type" value="Moayad">
+
+        <input type="submit" value="Submit">
+    </form>
+
+     <!--  Jinja2 -->
+        <p>The counter is {{ count }}</p>
+
+        {% for i in range( 0 , count) %}
+        <p>{{name}}</p>
+        {% endfor %}
+
+    <a href="/">Homepage</a>
+</body>
+
+</html>

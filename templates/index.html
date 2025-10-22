@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='myscript.js') }}"></script>
+</head>
+
+<body>
+    <h1 class="top">Hello World!</h1>
+
+    <p>This is our first full stack integration!!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus vitae quas ullam ad modi
+        aliquam doloribus sed, perferendis alias. Minima earum facilis recusandae consequatur doloremque odio maiores
+        sapiente enim.</p>
+
+    <a href="/login"> Go to Login Page.</a>
+
+    <button class="btn" onclick="myclick()">Click here</button>
+
+{{ session['myname'] }} 
+
+</body>
+
+</html>
